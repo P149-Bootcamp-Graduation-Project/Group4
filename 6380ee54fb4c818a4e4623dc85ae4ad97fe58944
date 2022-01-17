@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6e9bb9f_017a1cff",
+        "filename": "apis/base-api/app/controllers/userController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-17T17:11:29Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 53
+      },
+      "revId": "6380ee54fb4c818a4e4623dc85ae4ad97fe58944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
