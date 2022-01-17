@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4676fae0_eb7c677e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019814
+      },
+      "writtenOn": "2022-01-17T11:44:57Z",
+      "side": 1,
+      "message": "Okay",
+      "revId": "449acf5ec7eec4d3c049ed42148db7b6dcd84638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b82e4aeb_ae935cea",
+        "filename": "apis/base-api/app/utils/modelMapper.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1019814
+      },
+      "writtenOn": "2022-01-17T11:44:57Z",
+      "side": 1,
+      "message": "Okay",
+      "range": {
+        "startLine": 7,
+        "startChar": 5,
+        "endLine": 7,
+        "endChar": 29
+      },
+      "revId": "449acf5ec7eec4d3c049ed42148db7b6dcd84638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
