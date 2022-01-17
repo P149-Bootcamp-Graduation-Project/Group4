@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5fdfc9f_1851f82f",
+        "filename": "apis/base-api/app/routers/routes.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-17T17:09:44Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 54
+      },
+      "revId": "a788d5e2ea9613131c719bb4d83b49ed067a87a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
