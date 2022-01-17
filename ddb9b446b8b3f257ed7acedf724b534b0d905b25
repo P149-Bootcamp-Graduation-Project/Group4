@@ -22,6 +22,29 @@
       },
       "revId": "ddb9b446b8b3f257ed7acedf724b534b0d905b25",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "421b3682_f039a034",
+        "filename": "apis/base-api/app.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1019813
+      },
+      "writtenOn": "2022-01-17T11:36:02Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 8,
+        "startChar": 1,
+        "endLine": 8,
+        "endChar": 43
+      },
+      "revId": "ddb9b446b8b3f257ed7acedf724b534b0d905b25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
