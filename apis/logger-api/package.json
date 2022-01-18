@@ -1,0 +1,24 @@
+{
+  "name": "p149-group4-logger-api",
+  "version": "1.0.0",
+  "description": "P149 Bootcamp Graduation Project Group4 Error Logger API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Sema Nur Altintas",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-swagger-generator": "^1.1.17",
+    "helmet": "^5.0.1",
+    "http-status-codes": "^2.2.0",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
