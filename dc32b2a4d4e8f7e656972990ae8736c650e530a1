@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b422587_64a4bf93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019813
+      },
+      "writtenOn": "2022-01-19T19:47:16Z",
+      "side": 1,
+      "message": "ok",
+      "revId": "dc32b2a4d4e8f7e656972990ae8736c650e530a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "881d585b_d1b89c4b",
+        "filename": "apis/logger-api/app/controller/mongoController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1019813
+      },
+      "writtenOn": "2022-01-19T19:47:16Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 12
+      },
+      "revId": "dc32b2a4d4e8f7e656972990ae8736c650e530a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
