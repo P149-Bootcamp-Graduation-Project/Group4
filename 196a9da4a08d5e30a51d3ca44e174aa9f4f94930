@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f2c1be3_a66c402d",
+        "filename": "apis/kafka-api/app/adapters/database/mongodb.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-20T10:50:37Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 75
+      },
+      "revId": "196a9da4a08d5e30a51d3ca44e174aa9f4f94930",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
