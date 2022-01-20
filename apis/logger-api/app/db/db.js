@@ -1,5 +1,5 @@
 const mongoConnection = require('./mongoDb')
 
 module.exports = {
-    mongoConnection: mongoConnection
+    mongo_client: mongoConnection.mongo_client
 }
