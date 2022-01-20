@@ -1,7 +1,6 @@
 const UserDto = require('../domains/dtos/UserDto');
 const User = require('../domains/models/User');
-const { bcryptService } = require('../services/bcryptService');
-
+const UserRO = require('../domains/ros/UserRO');
 
 const modelMapper = {
     userToDto(user) {
@@ -9,6 +8,7 @@ const modelMapper = {
 
         userDto.id = user.id;
         userDto.userTitle = user.user_title;
+        userDto.userPass = user.user_pass;
         userDto.userName = user.user_name;
         userDto.email = user.email;
         userDto.phone = user.phone;
@@ -23,16 +23,31 @@ const modelMapper = {
         let user = new User();
 
         user.id = userDto.id;
-        user.userTitle = userDto.userTitle;
-        user.username = userDto.username;
-        user.userPass = bcryptService.hashPassword(userDto.userPass);
+        user.user_title = userDto.userTitle;
+        user.user_name = userDto.username;
+        user.user_pass = userDto.userPass;
         user.email = userDto.email;
         user.phone = userDto.phone;
-        user.lastLogin = userDto.lastLogin.toString();
-        user.createdAt = userDto.createdAt;
-        user.isActive = userDto.isActive;
+        user.last_login = userDto.lastLogin.toString();
+        user.created_at = userDto.createdAt;
+        user.is_active = userDto.isActive;
 
         return user;
+    },
+
+    userDtoToRO(userDto) {
+        let userRO = new UserRO();
+
+        userRO.id = userDto.id;
+        userRO.userTitle = userDto.userTitle;
+        userRO.username = userDto.username;
+        userRO.email = userDto.email;
+        userRO.phone = userDto.phone;
+        userRO.lastLogin = userDto.lastLogin.toString();
+        userRO.createdAt = userDto.createdAt;
+        userRO.isActive = userDto.isActive;
+
+        return userRO;
     }
 }
 

@@ -1,14 +1,14 @@
 class User {
     constructor({id, userTitle, userName, userPass, email, phone, lastLogin, createdAt, isActive} = {}) {
         this.id = id;
-        this.userTitle = userTitle;
-        this.userName = userName;
-        this.userPass = userPass;
-        this.email = email;
+        this.user_title  = userTitle;
+        this.user_name  = userName;
+        this.user_pass = userPass;
+        this.email  = email;
         this.phone = phone;
-        this.lastLogin = lastLogin;
-        this.createdAt = createdAt;
-        this.isActive = isActive;
+        this.last_login  = lastLogin;
+        this.created_at = createdAt;
+        this.is_active = isActive;
     }
 }
 

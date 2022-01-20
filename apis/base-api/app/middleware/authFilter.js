@@ -1,13 +1,13 @@
 const jwt = require('jsonwebtoken');
 const redis_client = require('../db/redis');
-
+const { jwtConfig } = require('../configs/config');
 
 function verifyToken(req, res, next) {
     try {
         // Bearer tokenstring
         const token = req.headers.authorization.split(' ')[1];
 
-        const decoded = jwt.verify(token, process.env.JWT_ACCESS_SECRET);
+        const decoded = jwt.verify(token, jwtConfig.secretKey);
         req.userData = decoded;
 
         req.token = token;
@@ -29,7 +29,7 @@ function verifyRefreshToken(req, res, next) {
 
     if(token === null) return res.status(401).json({status: false, message: "Invalid request."});
     try {
-        const decoded = jwt.verify(token, process.env.JWT_REFRESH_SECRET);
+        const decoded = jwt.verify(token, jwtConfig.secretKey);
         req.userData = decoded;
 
         // verify if token is in store or not
