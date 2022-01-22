@@ -3,6 +3,75 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "91f17ea0_61f9ac9f",
+        "filename": "apis/logger-api/app/configs/mongoDbConfig.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:39:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 38
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c29d5b2f_19f78383",
+        "filename": "apis/logger-api/app/controller/mongoController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:39:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 3,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 1
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b569c3e_56faaee1",
+        "filename": "apis/logger-api/app/controller/mongoController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:39:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 18,
+        "startChar": 8,
+        "endLine": 71,
+        "endChar": 5
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "392843d1_19bdee4f",
         "filename": "apis/logger-api/app/db/mongoDb.js",
         "patchSetId": 1
@@ -19,6 +88,52 @@
         "startChar": 0,
         "endLine": 4,
         "endChar": 124
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2519bb1b_b6799e98",
+        "filename": "apis/logger-api/app/routes/route.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:39:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 5,
+        "startChar": 1,
+        "endLine": 9,
+        "endChar": 53
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3adbcea_ca51bf16",
+        "filename": "apis/logger-api/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:39:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 45
       },
       "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
