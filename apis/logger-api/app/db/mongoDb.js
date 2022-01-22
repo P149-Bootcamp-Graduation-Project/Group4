@@ -1,16 +1,23 @@
-const config = require("../configs/config");
+const { mongoDbConfig } = require("../configs/config");
 const {MongoClient} = require('mongodb');
 
-const uri = config.mongoDbConfig.MONGO_ATLAS_URI
+const uri = `mongodb+srv://ivanbarayev:${mongoDbConfig.MONGO_PASS}@docdb.xmg8e.mongodb.net/test?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
-try {
-    client.connect();
-    console.log("::> MongoDB Server is Ready");
-} catch(err) {
-    throw new Error(err);
-}
 
-exports.mongo_client = client;
+async function run() {
+    try {
+        await client.connect();
+        await client.db("test").command({ ping: 1 });
+        console.log("::> MongoDB Server is Ready");
+    } catch(err) {
+        throw new Error(err);
+    }
+}
+run().catch(console.dir);
+
+module.exports = {
+    mongo_client: client
+};
