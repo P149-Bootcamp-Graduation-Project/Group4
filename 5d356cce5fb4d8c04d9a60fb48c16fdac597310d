@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "392843d1_19bdee4f",
+        "filename": "apis/logger-api/app/db/mongoDb.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T17:31:46Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 124
+      },
+      "revId": "5d356cce5fb4d8c04d9a60fb48c16fdac597310d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
