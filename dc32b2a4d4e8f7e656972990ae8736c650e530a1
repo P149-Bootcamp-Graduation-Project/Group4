@@ -39,6 +39,30 @@
       },
       "revId": "dc32b2a4d4e8f7e656972990ae8736c650e530a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7c05f2c_179d5273",
+        "filename": "apis/logger-api/app/controller/mongoController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-22T08:41:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "881d585b_d1b89c4b",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 12
+      },
+      "revId": "dc32b2a4d4e8f7e656972990ae8736c650e530a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
