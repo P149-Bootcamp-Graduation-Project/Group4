@@ -5,32 +5,28 @@ const tokenDal = require("../dals/tokenDal");
 
 const userService = {
     async getAllUser() {
-        const userList = await userDal.getAllUser();
-        let userDtoList = [];
-        userList.forEach(function (user) {
-            const userDto = modelMapper.userToDto(user);
-            userDtoList.push(userDto);
-        });
-        return userDtoList;
+        return await userDal.getAllUser();
     },
 
     async register(userDto) {
-        userDto.userPass = bcryptService.hashPassword(userDto.userPass);
+        userDto.userPass = await bcryptService.hashPassword(userDto.userPass);
         const user = modelMapper.dtoToUser(userDto);
         await userDal.insert(user);
     },
 
     async login(userDto) {
-        const user = await userDal.login(userDto);
-        if(user === null) {
+        let user = modelMapper.dtoToUser(userDto);
+        user = await userDal.login(user);
+        const bool = await bcryptService.verifyPassword(userDto.userPass, user[0].user_pass);
+        if(user === null || !bool) {
             throw new Error("User not found");
         } else {
-            return tokenDal.getAccessToken();
+            return tokenDal.getAccessToken(user[0].id);
         }
     },
 
-    async logout(id, accessToken) {
-        await tokenDal.deleteToken(id, accessToken);
+    logout(id, accessToken) {
+        tokenDal.deleteToken(id, accessToken);
 
         return true;
     }

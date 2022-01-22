@@ -3,11 +3,11 @@ const { bcryptConfig } = require('../configs/config');
 
 const bcryptService = {
     async hashPassword(password) {
-        const salt = bcrypt.genSalt(bcryptConfig.bcryptRound);
+        const salt = await bcrypt.genSalt(Number(bcryptConfig.bcryptRound));
         return await bcrypt.hash(password, salt);
     },
 
-    async verifyPassword(hash, password) {
+    async verifyPassword(password, hash) {
         return await bcrypt.compare(password, hash);
     }
 }

@@ -31,12 +31,12 @@ exports.register = async (req, res) => {
     }
 }
 
-exports.login = (req, res) => {
+exports.login = async (req, res) => {
     try {
         const userDto = new UserDto();
         userDto.userName = req.body.username;
         userDto.userPass = req.body.password;
-        const tokenRO = userService.login(userDto);
+        const tokenRO = await userService.login(userDto);
         res.json({data: tokenRO, code: "SUCCESS", timestamp: Date.now()}).status(StatusCodes.OK);
     } catch (error) {
         res.json({
@@ -47,12 +47,12 @@ exports.login = (req, res) => {
     }
 }
 
-exports.login = async (req, res) => {
+exports.logout = async (req, res) => {
     try {
         const id = req.body.id;
         const accessToken = req.body.accessToken;
 
-        const bool = await userService.logout(id, accessToken);
+        const bool = userService.logout(id, accessToken);
 
         res.json({res: bool, code: "SUCCESS", timestamp: Date.now()}).status(StatusCodes.OK);
     } catch (error) {

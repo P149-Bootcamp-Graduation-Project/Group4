@@ -1,10 +1,9 @@
 const express = require("express")
 const router = express.Router();
-const { authConstants } = require('./constants');
 const authController = require('../controllers/authController')
 
-router.get(`${authConstants.TOKEN}`, authController.verifyRefreshToken, );
+router.get('/', authController.verifyRefreshToken, authController.getAccessToken);
 
 module.exports = {
-    userRouter: router
+    authRouter: router
 }

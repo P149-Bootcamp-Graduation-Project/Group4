@@ -24,11 +24,11 @@ const modelMapper = {
 
         user.id = userDto.id;
         user.user_title = userDto.userTitle;
-        user.user_name = userDto.username;
+        user.user_name = userDto.userName;
         user.user_pass = userDto.userPass;
         user.email = userDto.email;
         user.phone = userDto.phone;
-        user.last_login = userDto.lastLogin.toString();
+        userDto.lastLogin !== null && (user.last_login = userDto.lastLogin);
         user.created_at = userDto.createdAt;
         user.is_active = userDto.isActive;
 

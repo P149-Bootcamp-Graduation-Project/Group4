@@ -13,12 +13,15 @@ function verifyToken(req, res, next) {
         req.token = token;
 
         // verify blacklisted access token.
-        redis_client.get('BL_' + decoded.sub.toString(), (err, data) => {
-            if(err) throw err;
-
-            if(data === token) return res.status(401).json({status: false, message: "blacklisted token."});
-            next();
-        })
+        redis_client.get('BL_' + decoded.sub.toString())
+            .then(data => {
+                if(data === token) {
+                    return res.status(401).json({status: false, message: "blacklisted token."});
+                }
+                next();
+            }).catch(err => {
+                throw new Error(err);
+            })
     } catch (error) {
         return res.status(401).json({status: false, message: "Your session is not valid.", data: error});
     }
@@ -33,14 +36,14 @@ function verifyRefreshToken(req, res, next) {
         req.userData = decoded;
 
         // verify if token is in store or not
-        redis_client.get(decoded.sub.toString(), (err, data) => {
-            if(err) throw err;
-
-            if(data === null) return res.status(401).json({status: false, message: "Invalid request. Token is not in store."});
-            if(JSON.parse(data).token !== token) return res.status(401).json({status: false, message: "Invalid request. Token is not same in store."});
-
-            next();
-        })
+        redis_client.get(decoded.sub)
+            .then(data => {
+                if(data === null) return res.status(401).json({status: false, message: "Invalid request. Token is not in store."});
+                if(data !== token) return res.status(401).json({status: false, message: "Invalid request. Token is not same in store."});
+                next()
+            }).catch(err => {
+                throw  new Error(err);
+            })
     } catch (error) {
         return res.status(401).json({status: true, message: "Your session is not valid.", data: error});
     }

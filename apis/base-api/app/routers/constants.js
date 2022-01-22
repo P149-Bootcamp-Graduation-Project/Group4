@@ -1,7 +1,8 @@
 const userConstants = {
     GET_ALL_USER: "/getAllUser",
     REGISTER: "/register",
-    LOGIN: "/login"
+    LOGIN: "/login",
+    LOGOUT: "/logout"
 }
 
 const routesConstants = {
@@ -9,7 +10,6 @@ const routesConstants = {
 }
 
 const authConstants = {
-    LOGOUT: "/logout",
     TOKEN: "/token"
 }
 

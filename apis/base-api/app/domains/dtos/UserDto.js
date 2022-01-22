@@ -1,5 +1,5 @@
 class UserDto {
-    constructor({id, user_title, user_name, email, phone, last_login, created_at, is_active} = {}) {
+    constructor({id, user_title, user_name, user_pass, email, phone, last_login, created_at, is_active} = {}) {
         this.id = id;
         this.userTitle = user_title;
         this.userName = user_name;

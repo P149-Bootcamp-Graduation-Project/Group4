@@ -5,32 +5,33 @@ const TokenRO = require("../domains/ros/TokenRO");
 
 const tokenDal = {
     getAccessToken(id) {
-        const accessToken = jwt.sign({sub: id}, jwtConfig.secretKey, { expiresIn: jwtConfig.accessTokenExpirationTime});
-        const refreshToken = this.generateRefreshToken(id);
-        return new TokenRO({accessToken, refreshToken});
+        let tokenRO = new TokenRO();
+        tokenRO.accessToken = jwt.sign({sub: id}, jwtConfig.secretKey, { expiresIn: jwtConfig.accessTokenExpirationTime});
+        tokenRO.refreshToken = this.generateRefreshToken(id);
+        return tokenRO;
     },
 
-    async generateRefreshToken(id) {
+    generateRefreshToken(id) {
         const refreshToken = jwt.sign({sub: id},
             jwtConfig.secretKey,
             {expiresIn: jwtConfig.refreshTokenExpirationTime}
         );
 
-        await redis_client.get(id.toString(), (err, data) => {
-            if(err) throw err;
-
-            redis_client.set(id.toString(), JSON.stringify({token: refresh_token}));
-        });
+        try{
+            redis_client.set(id, refreshToken);
+        }catch (err) {
+            throw new Error("err");
+        }
 
         return refreshToken;
     },
 
-    async deleteToken(id, accessToken) {
+    deleteToken(id, accessToken) {
         // remove the refresh token
-        await redis_client.del(id.toString());
+        redis_client.del(id);
 
         // blacklist current access token
-        await redis_client.set('BL_' + id.toString(), accessToken);
+        redis_client.set('BL_' + id.toString(), accessToken);
     }
 }
 
