@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e8abe69_22c75fe3",
+        "filename": "apis/base-api/app/controllers/authController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 1
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74179dc6_27334d4d",
+        "filename": "apis/base-api/app/dals/tokenDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 7,
+        "startChar": 2,
+        "endLine": 36,
+        "endChar": 1
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94e73606_7806032c",
+        "filename": "apis/base-api/app/dals/userDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 1
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a79451b_4af7c486",
+        "filename": "apis/base-api/app/db/redis.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 5
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2709b945_4c7412eb",
+        "filename": "apis/base-api/app/middleware/authFilter.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 14
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3896982d_2c03ad62",
+        "filename": "apis/base-api/app/services/userService.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:53:45Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 1
+      },
+      "revId": "76ebe3b3e4720591ec8b79dd679f4ba036a92f24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
