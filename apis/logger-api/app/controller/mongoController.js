@@ -32,7 +32,7 @@ exports.insertOne = async (req, res, next) => {
     try {
         const body = req.body;
         const result = await mongo_client.db('test').collection('group4').insertOne(body);
-        res.json({data: result, code: "SUCCESS", timestamp: Date.now()}).status(200);
+        res.json({data: result, code: "SUCCESS", timestamp: Date.now()}).status(201);
     } catch (error) {
         res.json({
             error: error.message,
