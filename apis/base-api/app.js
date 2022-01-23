@@ -11,6 +11,12 @@ app.use(helmet());
 app.use(express.json());
 
 app.use(`${process.env.APP_PREFIX}${routesConstants.USERS}`, routes.userRouter);
+app.use(`${process.env.APP_PREFIX}${routesConstants.SCHOOLS}`, routes.schoolRoutes);
+app.use(`${process.env.APP_PREFIX}${routesConstants.SENSORS}`, routes.sensorRoutes);
+app.use(`${process.env.APP_PREFIX}${routesConstants.CLASSES}`, routes.classRouter);
+app.use(`${process.env.APP_PREFIX}${routesConstants.LOG_TEMPERATURES}`, routes.logTemperatureRouter);
+app.use(`${process.env.APP_PREFIX}${routesConstants.LOG_AIR_QUALITY}`, routes.logAirQualityRouter);
+app.use(`${process.env.APP_PREFIX}${routesConstants.LOG_ELECTRIC_CONSUMPTION}`, routes.logElectricConsumptionRouter);
 app.use(`${process.env.APP_PREFIX}${authConstants.TOKEN}`, routes.authRouter);
 
 
