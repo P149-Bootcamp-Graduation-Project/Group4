@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7977f8f9_df520c08",
+        "filename": "apis/base-api/app.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 117
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ea80f40c_3869ddb7",
         "filename": "apis/base-api/app/controllers/classController.js",
         "patchSetId": 1
@@ -37,6 +60,75 @@
       "writtenOn": "2022-01-23T10:45:03Z",
       "side": 1,
       "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04288e26_50f8bcd8",
+        "filename": "apis/base-api/app/controllers/logElectricConsumptionController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c5240a4_f9084aa2",
+        "filename": "apis/base-api/app/controllers/logTemperatureController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a1714eb_673b1699",
+        "filename": "apis/base-api/app/controllers/schoolController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
       "range": {
         "startLine": 4,
         "startChar": 0,
@@ -118,6 +210,75 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "aebc7e9c_0fc94b74",
+        "filename": "apis/base-api/app/dals/logAirQualityDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c970b28_0a41e81f",
+        "filename": "apis/base-api/app/dals/logElectricConsumptionDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7ead8ef_37dcd0b8",
+        "filename": "apis/base-api/app/dals/logTemperatureDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e83811f8_ffc704aa",
         "filename": "apis/base-api/app/dals/schoolDal.js",
         "patchSetId": 1
@@ -156,6 +317,52 @@
         "startLine": 5,
         "startChar": 0,
         "endLine": 31,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69299860_56caece4",
+        "filename": "apis/base-api/app/domains/dtos/ClassDto.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tmm",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2fff51bf_69699617",
+        "filename": "apis/base-api/app/domains/dtos/SchoolDto.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 2,
+        "startChar": 2,
+        "endLine": 12,
         "endChar": 1
       },
       "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
@@ -248,6 +455,29 @@
         "startLine": 4,
         "startChar": 0,
         "endLine": 22,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cde3025e_65942543",
+        "filename": "apis/base-api/app/services/logTemperatureService.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:50:28Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 20,
         "endChar": 0
       },
       "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
