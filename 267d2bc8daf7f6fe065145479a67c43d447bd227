@@ -1,0 +1,349 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea80f40c_3869ddb7",
+        "filename": "apis/base-api/app/controllers/classController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "686699b2_082a04c5",
+        "filename": "apis/base-api/app/controllers/logAirQualityController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b52ddc0_0bca3e32",
+        "filename": "apis/base-api/app/controllers/sensorController.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a52b6cdc_0acfa5ea",
+        "filename": "apis/base-api/app/dals/classDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3a72752_7aba7342",
+        "filename": "apis/base-api/app/dals/dalConstants.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e83811f8_ffc704aa",
+        "filename": "apis/base-api/app/dals/schoolDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "35f09312_95de6e29",
+        "filename": "apis/base-api/app/dals/sensorDal.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1290fe0_1ba7224a",
+        "filename": "apis/base-api/app/routers/classRoutes.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "161dec8e_a950bace",
+        "filename": "apis/base-api/app/routers/routes.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92856511_c733a5ee",
+        "filename": "apis/base-api/app/routers/routes.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b96e8b6d_6a81309f",
+        "filename": "apis/base-api/app/services/classService.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 0
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "827dd716_00fc5734",
+        "filename": "apis/base-api/app/services/schoolService.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "tamam",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e3fb1bd_0262c5d5",
+        "filename": "apis/base-api/app/services/sensorService.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81e8b387_8c5872a7",
+        "filename": "apis/base-api/app/utils/modelMapper.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 53
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04c026fd_d9e2ec16",
+        "filename": "apis/base-api/app/utils/modelMapper.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1019815
+      },
+      "writtenOn": "2022-01-23T10:45:03Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 57,
+        "startChar": 4,
+        "endLine": 116,
+        "endChar": 1
+      },
+      "revId": "267d2bc8daf7f6fe065145479a67c43d447bd227",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
