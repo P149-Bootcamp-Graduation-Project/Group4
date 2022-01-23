@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 const helmet = require("helmet");
-const dotenv = require("dotenv");
+const {serverConfig} = require("./configs/config");
 const createConsumer = require('./kafka/consumer');
 
-dotenv.config();
+serverConfig.installServerConfigs();
 
 app.use(helmet());
 app.use(express.json());
