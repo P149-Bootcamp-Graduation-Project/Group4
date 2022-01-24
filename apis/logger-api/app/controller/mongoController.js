@@ -1,4 +1,5 @@
 const { mongo_client } = require('../db/db');
+const {ObjectId} = require("mongodb");
 
 exports.getAll = async (req, res, next) => {
     try {
@@ -16,7 +17,7 @@ exports.getAll = async (req, res, next) => {
 exports.getOne = async (req, res, next) => {
     try {
         const id = req.params.id;
-        const result = await mongo_client.db('test').collection('group4').findOne({_id: id.toString});
+        const result = await mongo_client.db('test').collection('group4').findOne({_id: ObjectId(id)});
         res.json({data: result, code: "SUCCESS", timestamp: Date.now()}).status(200);
     } catch (error) {
         res.json({
@@ -45,7 +46,7 @@ exports.insertOne = async (req, res, next) => {
 exports.deleteOne = async (req, res, next) => {
     try {
         const id = req.params.id;
-        const result = await mongo_client.db('test').collection('group4').deleteOne({_id: id.toString});
+        const result = await mongo_client.db('test').collection('group4').deleteOne({_id: id});
         res.json({data: result, code: "SUCCESS", timestamp: Date.now()}).status(200);
     } catch (error) {
         res.json({
@@ -60,7 +61,7 @@ exports.updateOne = async (req, res, next) => {
     try {
         const id = req.params.id;
         const update = req.body;
-        const result = await mongo_client.db('test').collection('group4').updateOne({_id: id.toString}, {$set: update});
+        const result = await mongo_client.db('test').collection('group4').updateOne({_id: ObjectId(id)}, {$set: update});
         res.json({data: result, code: "SUCCESS", timestamp: Date.now()}).status(200);
     } catch (error) {
         res.json({

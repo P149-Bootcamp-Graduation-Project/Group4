@@ -5,7 +5,7 @@ const { commonConstants } = require('./constants');
 const authFilter = require('../middleware/authFilter')
 
 router.get(`${commonConstants.GET_ALL}`, authFilter.verifyToken, logAirQualityController.getAll);
-router.post(`${commonConstants.GET_ONE}`, authFilter.verifyToken, logAirQualityController.getOne);
+router.get(`${commonConstants.GET_ONE}`, authFilter.verifyToken, logAirQualityController.getOne);
 router.post(`${commonConstants.INSERT}`, authFilter.verifyToken, logAirQualityController.insert);
 router.get(`${commonConstants.DELETE}`, authFilter.verifyToken, logAirQualityController.delete);
 

@@ -10,14 +10,15 @@ const userDal = {
             return JSON.parse(redisData);
         }
         const userList = await postgresConnection.db.query(userDalConstants.USER_LIST_QUERY);
-        let userDtoList = [];
+        let userROList = [];
         userList.forEach(function (user) {
             const userDto = modelMapper.userToDto(user);
-            userDtoList.push(userDto);
+            const userRO = modelMapper.userToDto(userDto);
+            userROList.push(userRO);
         });
-        redis_client.set('latestAllUsers', JSON.stringify(userDtoList));
+        redis_client.set('latestAllUsers', JSON.stringify(userROList));
         redis_client.expire('latestAllUsers', redisConfig.expirationTime);
-        return userDtoList;
+        return userROList;
     },
 
     async insert(user) {

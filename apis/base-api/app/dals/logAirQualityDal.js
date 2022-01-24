@@ -25,7 +25,7 @@ const logAirQualityDal = {
     },
 
     async delete(id) {
-        let deleteQuery = logAirQualityDalConstants.DELETE_QUERY + `id = ${id}`;
+        let deleteQuery = logAirQualityDalConstants.DELETE_QUERY + `id = ${Number(id)}`;
         return await postgresConnection.db.query(deleteQuery);
     }
 }

@@ -29,21 +29,21 @@ const logTemperatureDalConstants = {
     GET_ALL_QUERY: 'select * from patika.group3.log_temperature',
     GET_ONE_QUERY: 'select * from patika.group3.log_temperature ',
     INSERT_QUERY: 'insert into patika.group3.log_temperature (school_id, class_id, sensor_id, sensor_data, read_at) ',
-    DELETE_QUERY: 'delete from patika.group3.log_temperature '
+    DELETE_QUERY: 'delete from patika.group3.log_temperature where '
 }
 
 const logAirQualityDalConstants = {
     GET_ALL_QUERY: 'select * from patika.group3.log_air_quality',
     GET_ONE_QUERY: 'select * from patika.group3.log_air_quality ',
     INSERT_QUERY: 'insert into patika.group3.log_air_quality (school_id, class_id, sensor_id, sensor_data, read_at) ',
-    DELETE_QUERY: 'delete from patika.group3.log_air_quality '
+    DELETE_QUERY: 'delete from patika.group3.log_air_quality where '
 }
 
 const logElectricityConsumptionDalConstants = {
     GET_ALL_QUERY: 'select * from patika.group3.log_electricity_consumption',
     GET_ONE_QUERY: 'select * from patika.group3.log_electricity_consumption ',
     INSERT_QUERY: 'insert into patika.group3.log_electricity_consumption (school_id, class_id, sensor_id, sensor_data, read_at) ',
-    DELETE_QUERY: 'delete from patika.group3.log_electricity_consumption '
+    DELETE_QUERY: 'delete from patika.group3.log_electricity_consumption where '
 }
 
 module.exports = {

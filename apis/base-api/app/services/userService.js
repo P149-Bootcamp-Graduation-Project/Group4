@@ -25,8 +25,8 @@ const userService = {
         }
     },
 
-    logout(id, accessToken) {
-        tokenDal.deleteToken(id, accessToken);
+    async logout(id, accessToken) {
+        await tokenDal.deleteToken(id, accessToken);
 
         return true;
     }

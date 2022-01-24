@@ -26,12 +26,12 @@ const tokenDal = {
         return refreshToken;
     },
 
-    deleteToken(id, accessToken) {
+    async deleteToken(id, accessToken) {
         // remove the refresh token
-        redis_client.del(id);
+        await redis_client.del(id);
 
         // blacklist current access token
-        redis_client.set('BL_' + id.toString(), accessToken);
+        await redis_client.set('BL_' + id.toString(), accessToken);
     }
 }
 
