@@ -13,7 +13,6 @@ by using IoT principles and error-logger api to store errors that are catched on
 
 ![ProjectStructure](https://i.ibb.co/B67HSLs/mimari.png)
 
-
 ## 🛠 Technology Stacks
 
 **Project Management:** GerritHub, GitHub, JIRA/Atlassian
@@ -22,6 +21,131 @@ by using IoT principles and error-logger api to store errors that are catched on
 
 **Libraries:** kafkajs, pg-promise, mongodb, redis, jsonwebtoken, http-status-codes, bcrypt
 
+
+## Project Tree
+
+```
+📦 
+├─ .gitignore
+├─ README.md
+└─ apis
+   ├─ base-api
+   │  ├─ .gitignore
+   │  ├─ app.js
+   │  ├─ app
+   │  │  ├─ configs
+   │  │  │  ├─ bcryptConfig.js
+   │  │  │  ├─ config.js
+   │  │  │  ├─ jwtConfig.js
+   │  │  │  ├─ postgresConfig.js
+   │  │  │  ├─ redisConfig.js
+   │  │  │  └─ serverConfig.js
+   │  │  ├─ controllers
+   │  │  │  ├─ authController.js
+   │  │  │  ├─ classController.js
+   │  │  │  ├─ logAirQualityController.js
+   │  │  │  ├─ logElectricConsumptionController.js
+   │  │  │  ├─ logTemperatureController.js
+   │  │  │  ├─ schoolController.js
+   │  │  │  ├─ sensorController.js
+   │  │  │  └─ userController.js
+   │  │  ├─ dals
+   │  │  │  ├─ classDal.js
+   │  │  │  ├─ dalConstants.js
+   │  │  │  ├─ logAirQualityDal.js
+   │  │  │  ├─ logElectricConsumptionDal.js
+   │  │  │  ├─ logTemperatureDal.js
+   │  │  │  ├─ schoolDal.js
+   │  │  │  ├─ sensorDal.js
+   │  │  │  ├─ tokenDal.js
+   │  │  │  └─ userDal.js
+   │  │  ├─ db
+   │  │  │  ├─ db.js
+   │  │  │  ├─ postgres.js
+   │  │  │  └─ redis.js
+   │  │  ├─ domains
+   │  │  │  ├─ dtos
+   │  │  │  │  ├─ ClassDto.js
+   │  │  │  │  ├─ SchoolDto.js
+   │  │  │  │  └─ UserDto.js
+   │  │  │  ├─ models
+   │  │  │  │  ├─ Classes.js
+   │  │  │  │  ├─ School.js
+   │  │  │  │  └─ User.js
+   │  │  │  └─ ros
+   │  │  │     ├─ TokenRO.js
+   │  │  │     └─ UserRO.js
+   │  │  ├─ middleware
+   │  │  │  └─ authFilter.js
+   │  │  ├─ routers
+   │  │  │  ├─ authRoutes.js
+   │  │  │  ├─ classRoutes.js
+   │  │  │  ├─ constants.js
+   │  │  │  ├─ logAirQualityRoutes.js
+   │  │  │  ├─ logElectricConsumptionRoutes.js
+   │  │  │  ├─ logTemperatureRoutes.js
+   │  │  │  ├─ routes.js
+   │  │  │  ├─ schoolRoutes.js
+   │  │  │  ├─ sensorRoutes.js
+   │  │  │  └─ userRoutes.js
+   │  │  ├─ services
+   │  │  │  ├─ authService.js
+   │  │  │  ├─ bcryptService.js
+   │  │  │  ├─ classService.js
+   │  │  │  ├─ logAirQualityService.js
+   │  │  │  ├─ logElectricConsumptionService.js
+   │  │  │  ├─ logTemperatureService.js
+   │  │  │  ├─ schoolService.js
+   │  │  │  ├─ sensorService.js
+   │  │  │  └─ userService.js
+   │  │  └─ utils
+   │  │     └─ modelMapper.js
+   │  └─ package.json
+   ├─ consumer-api
+   │  ├─ app.js
+   │  ├─ configs
+   │  │  ├─ config.js
+   │  │  ├─ mongoDbConfig.js
+   │  │  ├─ postgresConfig.js
+   │  │  └─ serverConfig.js
+   │  ├─ db
+   │  │  ├─ db.js
+   │  │  ├─ mongoDb.js
+   │  │  └─ postgres.js
+   │  ├─ kafka
+   │  │  ├─ consumer.js
+   │  │  └─ kafka.js
+   │  ├─ package-lock.json
+   │  └─ package.json
+   ├─ logger-api
+   │  ├─ app
+   │  │  ├─ configs
+   │  │  │  ├─ config.js
+   │  │  │  ├─ default.yaml
+   │  │  │  ├─ mongoDbConfig.js
+   │  │  │  └─ serverConfig.js
+   │  │  ├─ controller
+   │  │  │  └─ mongoController.js
+   │  │  ├─ db
+   │  │  │  ├─ db.js
+   │  │  │  └─ mongoDb.js
+   │  │  ├─ routes
+   │  │  │  └─ route.js
+   │  │  └─ swagger
+   │  │     └─ swagger.yaml
+   │  ├─ index.js
+   │  ├─ package-lock.json
+   │  └─ package.json
+   └─ producer-api
+      ├─ app.js
+      ├─ controller
+      │  └─ sensorController.js
+      ├─ kafka
+      │  ├─ kafka.js
+      │  └─ producer.js
+      ├─ package-lock.json
+      └─ package.json
+```
 
 
 ## Run Locally
@@ -103,16 +227,13 @@ To run this project, you will need to add the following environment variables to
 
     MONGO_DEFAULT_DB=group4
     MONGO_PASS=tDVRDyxJbdjF7k9G
+    
 ## Authors
 
 - [@muslumcanozata](https://github.com/muslumcanozata)
 - [@semanuraltintas](https://github.com/semanuraltintas)
 - [@AydinSinan](https://github.com/AydinSinan)
 - [@nurayklc](https://github.com/nurayklc/)
-
-
-
-
 
 ## References
 
@@ -124,3 +245,6 @@ To run this project, you will need to add the following environment variables to
 - [Mongodb Documentation](https://docs.mongodb.com/manual/introduction/)
 - [GerritHub](http://gerrithub.io/)
 - [Jira | Atlassian](https://www.atlassian.com/software/jirae)
+- [Project Tree Generator](https://woochanleee.github.io/project-tree-generator)
+
+
